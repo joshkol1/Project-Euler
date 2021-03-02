@@ -1,5 +1,5 @@
 import java.util.*;
-public class problem77 {
+public class problem077 {
 	static ArrayList<Integer> primes;
 	public static void main(String[] args) {
 		primes = new ArrayList<>();

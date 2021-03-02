@@ -1,5 +1,5 @@
 import java.util.*;
-public class problem75 {
+public class problem075 {
 	// Problem: how many #s <= 1,500,000 can be formed into a right triangle in exactly one way?
 	// Euclid's formula: let m > n > 0, and let k >= 1.
 	// a = k*(m^2-n^2), b = k*2mn, c = k*(m^2+n^2)
