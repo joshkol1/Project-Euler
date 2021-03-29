@@ -3,7 +3,9 @@ using namespace std;
 typedef long long ll;
 #define pb push_back
 
-ll ans;
+ll MOD = 1E16;
+int mod_count[250];
+ll dp[250][250];
 
 ll fast_exp(ll b, ll e, ll m) {
     b %= m;
@@ -16,12 +18,10 @@ ll fast_exp(ll b, ll e, ll m) {
     return ret;
 }
 
-ll totient(ll n) {
-    for(ll p = 2; p <= n; p++) {
-        
-    }
-}
-
 int main() {
+    for(int i = 1; i <= 250250; i++) {
+        mod_count[fast_exp(i%250, i, 250)]++;
+    }
+
     return 0;
 }
