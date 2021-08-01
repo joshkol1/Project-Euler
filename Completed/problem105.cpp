@@ -37,7 +37,7 @@ void process() {
 }
 
 int main() {
-    freopen("../problem_inputs/105_sets.txt", "r", stdin);
+    freopen("../problem_inputs/p105_sets.txt", "r", stdin);
     for(int i = 0; i < 100; i++) {
         values.clear();
         sums.clear();
