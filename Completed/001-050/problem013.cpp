@@ -17,7 +17,7 @@ typedef long double ld;
 #define pb push_back
 
 int main() {
-    (void)!freopen("../problem_inputs/p013_numbers.txt", "r", stdin);
+    (void)!freopen("../../problem_inputs/p013_numbers.txt", "r", stdin);
     string n;
     vector<string> nums;
     while(cin >> n)

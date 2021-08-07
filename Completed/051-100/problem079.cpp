@@ -29,7 +29,7 @@ bool contains(string pass, string login) {
 }
 
 int main() {
-    (void)!freopen("../problem_inputs/p079_keylog.txt", "r", stdin);
+    (void)!freopen("../../problem_inputs/p079_keylog.txt", "r", stdin);
     vector<string> logins;
     string login;
     while(cin >> login)

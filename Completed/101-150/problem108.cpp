@@ -18,22 +18,16 @@ typedef long double ld;
 
 /*
     1/x+1/y=1/n --> x+y = xy/n --> (x-n)(y-n) = n^2
-    So, we need div(n^2) > 4,000,000
-    Easy upper bound: find smallest n such that square of
-    product of first n primes has > 4,000,000 factors.
-    An easy computation yields n = 14, with the last
-    prime being 43. Brute force all combinations of
-    these primes, runs quite quickly.
+    So, we need div(n^2) > 1,000
 */
 
 ll best_prod = 1;
-vector<ll> primes = {2,3,5,7,11,13,17,19,23,29,31,37,41,43};
+vector<ll> primes = {2,3,5,7,11,13,17};
 vector<int> exps;
 ll curr_prod = 1;
 
 void init() {
-    for(ll p : primes) 
-        best_prod *= p;
+    for(ll p : primes) best_prod *= p;
 }
 
 void search(int depth) {
@@ -41,7 +35,7 @@ void search(int depth) {
         int n_factors = 1;
         for(int e : exps) n_factors *= (2*e+1);
         n_factors = (n_factors+1)/2;
-        if(n_factors > 4000000 && curr_prod < best_prod) {
+        if(n_factors > 1000 && curr_prod < best_prod) {
             best_prod = curr_prod;
         }
         return;

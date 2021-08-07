@@ -19,7 +19,7 @@ typedef long double ld;
 int rows;
 
 int main() {
-    (void)!freopen("../problem_inputs/p011_grid.txt", "r", stdin);
+    (void)!freopen("../../problem_inputs/p011_grid.txt", "r", stdin);
     cin >> rows;
     vector<vector<int>> grid;
     for(int i = 0; i < rows; ++i) {

@@ -1,5 +1,5 @@
 if __name__ == "__main__":
-    f = open("../problem_inputs/p059_ciphertext.txt", "r")
+    f = open("../../problem_inputs/p059_ciphertext.txt", "r")
     ciphertext = [int(s) for s in f.readline().split(",")]
     for a in range(26):
         for b in range(26):

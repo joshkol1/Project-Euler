@@ -24,7 +24,7 @@ bool processed[80][80];
 int main() {
     ios_base::sync_with_stdio(0);
     cin.tie(0);
-    freopen("../problem_inputs/p081_matrix.txt", "r", stdin);
+    freopen("../../problem_inputs/p081_matrix.txt", "r", stdin);
     for(int i = 0; i < 80; i++) {
         string line; cin >> line;
         size_t pos;

@@ -27,7 +27,7 @@ bool oob(int r, int c) {
 }
 
 int main() {
-    (void)!freopen("../problem_inputs/p082_matrix.txt", "r", stdin);
+    (void)!freopen("../../problem_inputs/p082_matrix.txt", "r", stdin);
     for(int i = 0; i < 80; i++) {
         string line; cin >> line;
         size_t pos;

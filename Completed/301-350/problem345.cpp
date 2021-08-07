@@ -9,7 +9,7 @@ typedef long long ll;
 #define pb push_back
 
 int main() {
-    (void)!freopen("../problem_inputs/p345_matrix.txt", "r", stdin);
+    (void)!freopen("../../problem_inputs/p345_matrix.txt", "r", stdin);
     size_t N;
     cin >> N;
     vector<vector<int>> grid;

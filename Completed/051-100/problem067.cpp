@@ -17,7 +17,7 @@ typedef long double ld;
 #define pb push_back
 
 int main() {
-    (void)!freopen("../problem_inputs/p067_grid.txt", "r", stdin);
+    (void)!freopen("../../problem_inputs/p067_grid.txt", "r", stdin);
     int n_rows;
     cin >> n_rows;
     vector<vector<int>> grid;

@@ -5,7 +5,7 @@ def value(word):
     return sum([ord(c)-ord('A')+1 for c in word])
 
 if __name__ == "__main__":
-    f = open("../problem_inputs/p042_words.txt", "r")
+    f = open("../../problem_inputs/p042_words.txt", "r")
     triangles = get_triangles(50)
     names = f.readline().split(",")
     names = [s[1:-1] for s in names]
