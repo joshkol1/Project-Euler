@@ -47,7 +47,11 @@ int main() {
         if(orders[i+1] == 1)
             break;
     }
-    for(ll o : orders)
-        cout << o << endl;
+    reverse(orders.begin(), orders.end());
+    orders.pb(MOD);
+    ll ans = 1;
+    for(size_t i = 1; i < orders.size(); ++i)
+        ans = fast_exp(1777, ans, orders[i]);
+    cout << ans << endl;
     return 0;
 }
