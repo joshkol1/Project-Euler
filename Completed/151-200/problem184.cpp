@@ -71,7 +71,6 @@ int n_good_points(const std::pair<int, int>& p1, const std::pair<int, int>& p2) 
 
 int main() {
     get_points();
-    std::cout << bottom_points.size() << " " << top_points.size() << " " << bottom_angles.size() << std::endl;
     ll answer = 0;
     for(size_t i = 0; i < top_points.size(); ++i) {
         for(size_t j = i+1; j < top_points.size(); ++j) {
